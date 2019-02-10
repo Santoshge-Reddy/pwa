@@ -30,14 +30,16 @@ function handleClickNumber () {
 
 
 function addValueToInput (element) {
+  let $input = $('[data-js="input"]').val();
   if (isZeroTheOnlyValueOnInput()){
     clearInput();
   }
+      $input += element;
+      $('[data-js="input"]').val($input);
 
-  let $input = $('[data-js="input"]').val();
 
-  $input += element;
-  $('[data-js="input"]').val($input);
+  
+
 }
 
 
@@ -67,6 +69,10 @@ function handleClickOperation(value){
 
   if (!getOperators().some(operator => $input.slice(-1) === operator)) {
     addValueToInput(value);
+  }else{
+    $input = $input.slice(0, -1);
+    $input = $input + value;
+    $('[data-js="input"]').val($input);
   }
 }
 
