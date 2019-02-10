@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="calculator">
+    <input class="calculator__input" type="text" readonly value="0" data-js="input">
+
+    <div class="calculator__buttons-container">
+      <div class="calculator__numbers-container">
+        <button class="calculator__button-number calculator__button-number_0" data-js="button-number" value="0">0</button>
+        <button class="calculator__button-number calculator__button-number_1" data-js="button-number" value="1">1</button>
+        <button class="calculator__button-number calculator__button-number_2" data-js="button-number" value="2">2</button>
+        <button class="calculator__button-number calculator__button-number_3" data-js="button-number" value="3">3</button>
+        <button class="calculator__button-number calculator__button-number_4" data-js="button-number" value="4">4</button>
+        <button class="calculator__button-number calculator__button-number_5" data-js="button-number" value="5">5</button>
+        <button class="calculator__button-number calculator__button-number_6" data-js="button-number" value="6">6</button>
+        <button class="calculator__button-number calculator__button-number_7" data-js="button-number" value="7">7</button>
+        <button class="calculator__button-number calculator__button-number_8" data-js="button-number" value="8">8</button>
+        <button class="calculator__button-number calculator__button-number_9" data-js="button-number" value="9">9</button>
+        <button class="calculator__button-number calculator__button-number_remove" data-js="button-remove-last-character">
+            <i data-icon="arrow_back"></i>
+        </button>
+      </div>
+
+      <div class="calculator__operations-container">
+        <button class="calculator__button-operation calculator__button-operation_sum" data-js="button-operation" value="+">+</button>
+        <button class="calculator__button-operation calculator__button-operation_ce" data-js="button-ce">C</button>
+        <button class="calculator__button-operation calculator__button-operation_subtraction" data-js="button-operation" value="-">-</button>
+        <button class="calculator__button-operation calculator__button-operation_times" data-js="button-operation" value="x">&times;</button>
+        <button class="calculator__button-operation calculator__button-operation_division" data-js="button-operation" value="÷">÷</button>
+        <button class="calculator__button-operation calculator__button-operation_equal" data-js="button-equal">=</button>
+      </div>
+    </div>
+  </div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

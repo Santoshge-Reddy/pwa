@@ -1,0 +1,200 @@
+@import url("https:////fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #121518;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  border: 0;
+  font-size: 34px;
+  transition: all .5s ease-out;
+}
+button:not(.calculator__button-operation_equal) {
+  font-size: 24px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+
+.calculator {
+  width: 22.2rem;
+  background-color: #212327;
+  border-radius: .625rem;
+  padding: 60px 30px;
+  box-shadow: 0px 25px 30px -15px #111417;
+}
+
+.calculator__input {
+  border: 0;
+  text-align: end;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  color: #fff;
+  cursor: auto;
+  font-size: 80px;
+  width: 100%;
+  height: 65px;
+  margin-bottom: 50px;
+}
+.calculator__input::-moz-selection {
+  background-color: #ff0b98;
+  color: #ff5c28;
+}
+.calculator__input::selection {
+  background-color: #ff0b98;
+  color: #ff5c28;
+}
+
+.calculator__buttons-container {
+  display: flex;
+  justify-content: space-between;
+  height: 235px;
+}
+
+.calculator__numbers-container {
+  width: 63%;
+  display: grid;
+  grid-template-areas: "button-7 button-8 button-9" "button-4 button-5 button-6" "button-1 button-2 button-3" ". button-0 button-remove";
+  grid-column-gap: 5px;
+  grid-row-gap: 10px;
+  justify-items: center;
+  position: relative;
+  top: -3px;
+  left: -12px;
+}
+
+.calculator__button-number {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.calculator__button-number:hover {
+  background-color: #303236;
+}
+
+.calculator__button-number_0 {
+  grid-area: button-0;
+}
+
+.calculator__button-number_1 {
+  grid-area: button-1;
+}
+
+.calculator__button-number_2 {
+  grid-area: button-2;
+}
+
+.calculator__button-number_3 {
+  grid-area: button-3;
+}
+
+.calculator__button-number_4 {
+  grid-area: button-4;
+}
+
+.calculator__button-number_5 {
+  grid-area: button-5;
+}
+
+.calculator__button-number_6 {
+  grid-area: button-6;
+}
+
+.calculator__button-number_7 {
+  grid-area: button-7;
+}
+
+.calculator__button-number_8 {
+  grid-area: button-8;
+}
+
+.calculator__button-number_9 {
+  grid-area: button-9;
+}
+
+.calculator__button-number_remove {
+  grid-area: button-remove;
+}
+
+.calculator__operations-container {
+  width: 37%;
+  display: grid;
+  grid-template-areas: "ce subtraction" "sum times" "sum division" "equal equal";
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.calculator__button-operation {
+  border-radius: 50px;
+  background-color: #303236;
+}
+.calculator__button-operation:hover {
+  background-color: #3b3c40;
+}
+
+.calculator__button-operation_ce {
+  grid-area: ce;
+}
+
+.calculator__button-operation_subtraction {
+  grid-area: subtraction;
+}
+
+.calculator__button-operation_sum {
+  grid-area: sum;
+}
+
+.calculator__button-operation_times {
+  grid-area: times;
+}
+
+.calculator__button-operation_division {
+  grid-area: division;
+}
+
+.calculator__button-operation_equal {
+  grid-area: equal;
+  background-image: linear-gradient(to right, #ff0b98, #ff5c28);
+  box-shadow: 0px 0px 50px 10px #4a2b2b;
+}
+.calculator__button-operation_equal:hover {
+  opacity: .8;
+}
+
+[data-icon]::before {
+  content: attr(data-icon);
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: .5em;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
