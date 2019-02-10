@@ -18,9 +18,10 @@ p {
 
 .puzzle {
 
-background: #614385;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #EB3349;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F45C43, #EB3349);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F45C43, #EB3349); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   /*background: linear-gradient(hsl(360, 98%, 36%), hsl(360, 92%, 42%)), url(https://www.toptal.com/designers/subtlepatterns/patterns/white_plaster.png);*/
   /*background-blend-mode: multiply;*/
