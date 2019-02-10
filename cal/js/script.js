@@ -9,11 +9,20 @@ let firstValue, operator, lastValue, lastOperator;
 $buttonsNumber.on('click', handleClickNumber);
 $buttonCe.on('click', handleClickCe);
 $buttonEqual.on('click', handleClickEqual);
-// $buttonRemoveLastChar.on('click', handleClickRemove);
+$buttonRemoveLastChar.on('click', handleClickRemove);
 $('[data-js="button-operation"]').click(function(){
     handleClickOperation(this.value);
 });
 
+
+
+function handleClickRemove () {
+  if (!isZeroTheOnlyValueOnInput()){
+      let $input = $('[data-js="input"]').val();
+          $input = $input.slice(0, -1);
+      $('[data-js="input"]').val($input);
+  }
+}
 
 function handleClickNumber () {
   addValueToInput(this.value);
