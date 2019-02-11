@@ -3,6 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <title>Ballz</title>
+
+
+      <link rel="manifest" href="manifest.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+      <meta name="theme-color" content="#ffffff">
+
+
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   <style> body { margin: 0; background: #2B2E31 url(images/screen-bg.png) repeat; } </style>
   <script src="js/phaser-arcade-physics.2.2.2.min.js"></script>
@@ -11,6 +18,8 @@
   <script src="js/MainMenu.js"></script>
   <script src="js/Howto.js"></script>
   <script src="js/Game.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
 </head>
 <body>
 <script>
@@ -23,6 +32,11 @@
   game.state.add('Game', Ball.Game);
   game.state.start('Boot');
 })();
+</script>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  };
 </script>
 </body>
 </html>
