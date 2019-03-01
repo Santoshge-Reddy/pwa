@@ -13,5 +13,7 @@ Group of Projects
 <li>games</li>
 <ul>
   <li><a href="https://santoshge-reddy.github.io/pwa/games/swap/">Swap</a></li>
+  <li><a href="https://santoshge-reddy.github.io/pwa/games/ballz/">ballz</a>(PWA in progress)</li>
+  <li><a href="https://santoshge-reddy.github.io/pwa/games/breakout/">breakout</a>(PWA in progress)</li>
 </ul>
 </ul>
